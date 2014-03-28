@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery canvas</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="canvas.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+            // --------------
+            // events bepalen
+            // --------------
+            $(document).ready(
+                    function() {
+                        $('#mijncanvas').bind('click', Tekenen);
+                    }
+            );
+
+            // -------------------
+            // uitwerking functies
+            // -------------------    
+
+            function Tekenen() {
+                var element = $('#mijncanvas')[0];
+                var context = element.getContext('2d');
+				
+				context.beginPath();
+				context.strokeStyle = 'red';
+				context.lineWidth = 10;
+				context.rect(250,140,50,100);
+				context.rect(225,165,100,50);
+				context.fillStyle = 'red';
+				context.fill();
+
+
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <h1>Canvas</h1>
+        <canvas id="mijncanvas" width="600" height="400"> </canvas>
+    </body>
+</html>

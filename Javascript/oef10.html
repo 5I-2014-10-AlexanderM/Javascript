@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+        <script type="text/javascript">
+
+            var verbruik = prompt("Geef uw verbruik in KWH.");
+            var vastrecht = prompt("Geef het bedrag van het vast recht");
+            var prijs = prompt("Geef de prijs per KWH.");
+            var btw = prompt("Geef uw BTW-tarief.");
+
+            
+            function berekenPrijs(verbruik, vastrecht, prijs, btw) {
+                var kwh = parseInt(verbruik) * parseInt(prijs);
+                var totaal = parseInt(kwh) + parseInt(btw) + parseInt(vastrecht);
+
+                alert("U moet in totaal " + totaal + " betalen");
+            }
+
+            berekenPrijs(verbruik, vastrecht, prijs, btw);
+
+        </script>
+</body>
+</html>

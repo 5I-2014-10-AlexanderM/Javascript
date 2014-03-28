@@ -1,0 +1,5 @@
+body {font-family: verdana,sans-serif;}
+canvas {border:1px solid #ec4b2f; /*CSS om rand rond canvas te tekenen*/
+        background-color:#edebd9;} 
+h1{color:#ec4b2f;
+   background-color: white;}

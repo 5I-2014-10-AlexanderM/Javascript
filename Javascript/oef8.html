@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+        <script type="text/javascript">
+
+            function FamilienaamEerst(voornaam, achternaam) {
+                var naam = prompt("Voornaam, Familienaam");
+                var voornaam = naam.substr(0, naam.indexOf(','));
+                var familienaam = naam.substr(naam.indexOf(',') + 1, naam.length);
+
+                alert(familienaam + " " + voornaam);
+            }
+
+            FamilienaamEerst();
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+        <script type="text/javascript">
+
+
+            function berekenTickets(aantaltickets) {
+                var aantaltickets = prompt("Hoeveel tickets wilt u?");
+                var extratickets = aantaltickets / 10;
+                var totaaltickets = parseInt(aantaltickets) + parseInt(extratickets);
+                var prijs = 1.25;
+                var totaalprijs = aantaltickets * prijs;
+
+
+                alert("U krijgt in totaal " + Math.floor(totaaltickets) + " tickets voor een prijs van " + totaalprijs + " euro");
+            }
+
+            berekenTickets();
+
+        </script>
+</body>
+</html>

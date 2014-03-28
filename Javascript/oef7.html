@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+        <script type="text/javascript">
+
+            // February 28, 2014
+            function DagVanDeWeek(datum) {
+                var datum = prompt("Geef een datum in:");
+                var d = new Date(datum);
+                var weekday = new Array(7);
+                weekday[0] = "Sunday";
+                weekday[1] = "Monday";
+                weekday[2] = "Tuesday";
+                weekday[3] = "Wednesday";
+                weekday[4] = "Thursday";
+                weekday[5] = "Friday";
+                weekday[6] = "Saturday";
+
+                var n = weekday[d.getDay()];
+                alert("De weekdag is: " + n);
+
+            }
+
+            DagVanDeWeek();
+
+        </script>
+</body>
+</html>

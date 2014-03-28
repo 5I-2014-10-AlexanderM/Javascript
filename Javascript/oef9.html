@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+        <script type="text/javascript">
+
+            function berekenPrijs(lengte, breedte, prijs) {
+                var lengte = prompt("Geef uw lengte in meter.");
+                var breedte = prompt("Geef uw breedte in meter.");
+                var prijs = prompt("Geef uw prijs per vierkante meter.");
+
+                var oppervlakte = parseInt(lengte) * parseInt(breedte);
+                var totaleprijs = parseInt(oppervlakte) * parseInt(prijs);
+
+                alert("De prijs voor dit stuk grond is: " + totaleprijs);
+            }
+
+            berekenPrijs();
+
+        </script>
+</body>
+</html>

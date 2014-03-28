@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery canvas</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="canvas.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+            // --------------
+            // events bepalen
+            // --------------
+            $(document).ready(
+                    function() {
+                        $('#mijncanvas').bind('click', Tekenen);
+                    }
+            );
+
+            // -------------------
+            // uitwerking functies
+            // -------------------    
+
+            function Tekenen() {
+                var element = $('#mijncanvas')[0];
+                var context = element.getContext('2d');
+				
+				// Top
+				context.beginPath();
+				context.rect(250,40,100,100);
+				context.fillStyle = '#FF0000';
+				context.fill();
+				
+				// Middle
+				context.beginPath();
+				context.rect(250,140,100,100);
+				context.fillStyle = '#FF0000';
+				context.fill();
+				
+				// Mid-left
+				context.beginPath();
+				context.rect(100,140,250,100);
+				context.fillStyle = '#FF0000';
+				context.fill();
+				
+				// Mid-right
+				context.beginPath();
+				context.rect(400,140,100,100);
+				context.fillStyle = '#FF0000';
+				context.fill();
+				
+				// Bottom
+				context.beginPath();
+				context.rect(250,240,100,100);
+				context.fillStyle = '#FF0000';
+				context.fill();
+				
+
+
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <h1>Canvas</h1>
+        <canvas id="mijncanvas" width="600" height="400"> </canvas>
+    </body>
+</html>
